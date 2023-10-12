@@ -1,6 +1,6 @@
 package net.flamgop.packet;
 
-public class ListDiscsPacket implements Packet {
+public record ListDiscsPacket() implements Packet {
     @Override
     public byte command() {
         return Packets.DISC_LIST.command();

@@ -1,6 +1,6 @@
 package net.flamgop.packet;
 
-public class RequestTagDataPacket implements Packet {
+public record RequestTagDataPacket() implements Packet {
     @Override
     public byte command() {
         return (byte)0xb4;
